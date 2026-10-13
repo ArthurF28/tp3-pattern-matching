@@ -3,7 +3,9 @@
 Trabalho da disciplina de Linguagens de Programação
 
 **Dupla:** Arthur de Oliveira Ferreira e Isadora Spode Cardoso
+
 **Tópico:** D – Combinação de padrões (Pattern Matching) na definição de funções
+
 **Vídeo:** (adicionar link após publicar)
 
 ## Conceito
