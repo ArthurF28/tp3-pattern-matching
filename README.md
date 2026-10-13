@@ -38,6 +38,17 @@ comparação com `if/else` e guardas.
 runghc Simples.hs
 ```
 
+## Resposta esperada
+
+120
+[False,True,False,False,True,False,False]
+3
+("a",1)
+7
+0
+["zero","um","outro"]
+(3,3)
+
 ## Referências
 
 - 
