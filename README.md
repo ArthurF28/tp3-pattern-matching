@@ -57,6 +57,10 @@ runghc Simples.hs
 
 Solução completa em [`Kata.hs`](Kata.hs).
 
+```
+runghc Kata.hs
+```
+
 ### Enunciado
 
 Dada uma lista de números não negativos, devolver outra lista sem repetições,
