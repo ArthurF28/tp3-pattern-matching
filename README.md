@@ -38,23 +38,57 @@ comparação com `if/else` e guardas.
 runghc Simples.hs
 ```
 
-## Resposta esperada
+## Saída esperada
 
+```
 120
-
 [False,True,False,False,True,False,False]
-
 3
-
 ("a",1)
-
 7
-
 0
-
 ["zero","um","outro"]
-
 (3,3)
+```
+
+## Exercício do CodeWars
+
+**Kata:** [Remove duplicates from list](https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/haskell)
+
+Solução completa em [`Kata.hs`](Kata.hs).
+
+### Enunciado
+
+Dada uma lista de números não negativos, devolver outra lista sem repetições,
+mantendo a ordem da primeira aparição de cada número.
+Exemplo: `[1,2,1,1,3,2]` vira `[1,2,3]`.
+
+### Raciocínio
+
+Percorremos a lista de entrada carregando um acumulador `seen` com os números
+já vistos. Em cada passo olhamos o primeiro elemento `x`: se ele já está em
+`seen`, descartamos e seguimos; se não está, ele entra no resultado e também em
+`seen`. Quando a entrada acaba, devolvemos a lista vazia.
+
+### Onde o tópico aparece
+
+A função auxiliar `go` é definida por **duas equações**, testadas de cima para baixo:
+
+- `go _ []`: `[]` é um **construtor** e `_` é o **curinga**, que
+  ignora o acumulador. É o caso base.
+- `go seen (x:xs)`: `(x:xs)` é o **construtor** `(:)`, que separa cabeça e
+  resto; `seen`, `x` e `xs` são **padrões de variável**. Essa equação só casa
+  com lista não vazia, então nunca precisamos de `head` ou `tail`.
+
+Dentro da segunda equação usamos **guardas** (`x `elem` seen` e `otherwise`).
+O pattern matching decide a **forma** da lista (vazia ou não), e as guardas
+decidem o **valor** (elemento repetido ou novo).
+
+## Ferramentas de apoio
+
+- ANTHROPIC. *Claude*. Utilizado como apoio na
+  organização do repositório e na revisão das explicações e dos exemplos.
+  Conversa realizada em 24 out. 2026. Disponível em: https://claude.ai.
 
 ## Referências
 
