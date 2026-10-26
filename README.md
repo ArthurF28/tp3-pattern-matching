@@ -96,7 +96,6 @@ decidem o **valor** (elemento repetido ou novo).
 
 ## Referências
 
-- 
-- 
-- 
-- 
+- HUTTON, Graham. Programming in Haskell. 2. ed. Cambridge University Press, 2016. (cap. 4, Defining functions)
+- MARLOW, Simon (ed.). Haskell 2010 Language Report. 2010. Seção 3.17, Pattern Matching. https://www.haskell.org/onlinereport/haskell2010/
+- Codewars. Remove duplicates from list. https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/haskell
