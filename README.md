@@ -6,7 +6,7 @@ Trabalho da disciplina de Linguagens de Programação
 
 **Tópico:** D – Combinação de padrões (Pattern Matching) na definição de funções
 
-**Vídeo:** (adicionar link após publicar)
+**Vídeo:** https://www.youtube.com/watch?v=iHDiuH7zU9k
 
 ## Conceito
 
